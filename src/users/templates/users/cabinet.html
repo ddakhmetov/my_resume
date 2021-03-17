@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Кабинет</title>
+</head>
+<body>
+    <h1>Привет из кабинета пользователя</h1>
+    {% for data in worker %}
+        <p>{{ data.last_name }} {{ data.first_name }} {{ data.father_name }}, мы очень рады, что Вы решили изменить данные в своём резюме. Иногда это помогает быстрее найти работу</p>
+    {% endfor %}
+</body>
+</html>
